@@ -26,7 +26,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         newEmployee.setPhone(employee.getPhone());
         newEmployee.setAddress(employee.getAddress());
         newEmployee.setDateOfBirth(employee.getDateOfBirth());
-        newEmployee.setDepartmentId();
+        newEmployee.setDepartmentId(employee.getDepartmentId());
         newEmployee.setJoinedDate(LocalDate.now());
 
         EmployeeCategory empCategory = employeeCategoryRepository.findById(employee.getId())
